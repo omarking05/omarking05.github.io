@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "mrgeek-personal-website",
+  "description": null,
+  "icons": {
+    "60": "/icons-111bcd267ab0d4df75849adb4dcbc567/firefox_app_60x60.png",
+    "128": "/icons-111bcd267ab0d4df75849adb4dcbc567/firefox_app_128x128.png",
+    "512": "/icons-111bcd267ab0d4df75849adb4dcbc567/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}
