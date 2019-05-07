@@ -26,15 +26,10 @@ const Title = styled.h1`
   font-size: 48px;
 `
 
-const Separator = styled.div`
-  border-bottom: 1px solid #e2e2e2;
-  width: 100%;
-`
-
 const Header = ({ siteTitle }) => (
   <ActualHeader>
     <img style={{
-      width: `15.89rem`,
+      width: `10.89rem`,
       marginBottom: 0,
       borderRadius: `50%`
     }} src={me} alt="Me Vectorized" />
@@ -46,7 +41,7 @@ const Header = ({ siteTitle }) => (
     <SkillContainer />
     <SocialContainer />
     
-    <Separator />
+    <div className="separator"></div>
   </ActualHeader>
 )
 

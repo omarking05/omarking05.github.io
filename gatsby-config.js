@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `Omar Ahmed`,
-    description: `My personal blog & website project`,
+    description: `Just another software engineer's personal website.`,
     author: `@OmarAhm3`,
   },
   plugins: [
