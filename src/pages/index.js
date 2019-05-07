@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   margin: .5rem 0;
+  maxWidth: 800,
   h1 {
     margin: 0;
     margin-bottom: .5rem;
