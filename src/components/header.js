@@ -8,7 +8,7 @@ import me from '../static/me.jpg';
 
 const ActualHeader = styled.header`
   margin: 2rem auto;
-  max-width: 600px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
