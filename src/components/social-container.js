@@ -46,7 +46,7 @@ const Icon = styled(IconAnimation)`
 
 const whatsAppMessage = "Knock Knock :)"
 
-const whatsAppUrl = encodeURI(`https://wa.me/00201117710932?text=${whatsAppMessage}`)
+const whatsAppUrl = encodeURI(`https://wa.me/201117710932?text=${whatsAppMessage}`)
 
 const SocialContainer = () => (
   <Container>
