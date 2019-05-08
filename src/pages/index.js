@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContentContainer from "../components/content-container";
 import ProjectContainer from "../components/projects-container";
+import TextLoop from "react-text-loop";
 
 const metaKeywords = [
   'omar',
@@ -45,6 +46,48 @@ const projects = [
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={metaKeywords} />
+
+    <ContentContainer>
+      <div className="main-intro">
+        <div className="main-word">
+          <h2>Hi</h2>
+        </div>
+        <div className="main-content">
+          <h3>
+            I'm a software developer.
+          </h3>
+          <h3>
+            always happy to solve
+            {" "}
+            <TextLoop>
+              <span className="no-strike">all</span>
+              <span className="no-strike">some</span>
+              <span className="no-strike">one</span>
+            </TextLoop>
+            {" "}
+            <span className="no-strike">of your</span> problems.
+          </h3>
+        </div>
+      </div>
+      <div className="main-intro">
+        <div className="main-word">
+          <h2 className="smaller">There</h2>
+        </div>
+        <div className="main-content">
+          <h3>
+            Feels like chatting?
+          </h3>
+          <h3>
+            Great! It's okay to reach out any time, you know :)
+          </h3>
+        </div>
+      </div>
+      <p>
+      </p>
+    </ContentContainer>
+
+    <div className="separator"></div>
+
     <ContentContainer>
       <h1>Currently...</h1>
       <p>

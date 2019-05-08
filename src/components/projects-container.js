@@ -26,7 +26,7 @@ const ProjectContainer = ({ projects }) => (
   <>
     {
       projects.map(project => (
-        <Project href={project.link} rel="noopener noreferrer" target='_blank'>
+        <Project key={project.title} href={project.link} rel="noopener noreferrer" target='_blank'>
           <div style={{width: `100%`}}>
             {project.title}
           </div>
