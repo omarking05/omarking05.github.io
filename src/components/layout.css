@@ -80,6 +80,25 @@ blockquote p {
   opacity: .25;
 }
 
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skill {
+  padding: .5rem;
+  color: #333;
+}
+
+.skill img {
+  width: 70%;
+}
+
+.tech-container {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
 @media (max-width: 650px) {
   .main-intro {
     margin-bottom: 3rem;
