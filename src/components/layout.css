@@ -88,19 +88,29 @@ blockquote p {
 .skill {
   padding: .5rem;
   color: #333;
+  text-align: center;
 }
 
-.skill img {
-  width: 70%;
+.skill svg {
+  width: 60%;
+  fill: #5badf0;
 }
 
 .tech-container {
-  max-height: 50vh;
-  overflow-y: scroll;
+  max-height: 25vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 @media (max-width: 650px) {
   .main-intro {
     margin-bottom: 3rem;
   }
+}
+
+.social-svg {
+  width: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  vertical-align: middle;
 }

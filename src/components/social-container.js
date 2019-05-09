@@ -2,12 +2,14 @@ import React from "react"
 import styled from 'styled-components';
 import posed from 'react-pose';
 
-import github from '../static/svg/github.svg';
-import twitter from '../static/svg/twitter.svg';
-import devTo from '../static/svg/dev-dot-to.svg';
-import linkedIn from '../static/svg/linkedin.svg';
-import gmail from '../static/svg/gmail.svg';
-import whatsApp from '../static/svg/whatsapp.svg';
+import Github from '../static/svg/github.svg';
+import Twitter from '../static/svg/twitter.svg';
+import DevTo from '../static/svg/dev-dot-to.svg';
+import LinkedIn from '../static/svg/linkedin.svg';
+import Gmail from '../static/svg/gmail.svg';
+import WhatsApp from '../static/svg/whatsapp.svg';
+
+
 
 const Container = styled.div`
   line-height: normal;
@@ -23,7 +25,7 @@ const SocialLink = styled.a`
   margin: .25rem .5rem;
 `
 
-const IconAnimation = posed.img({
+const IconAnimation = posed.div({
   hoverable: true,
   pressable: true,
   init: {
@@ -42,33 +44,49 @@ const Icon = styled(IconAnimation)`
   max-width: 2rem;
   max-height: 2rem;
   vertical-align: middle;
+  margin-bottom: 1.58rem;
 `
 
 const whatsAppMessage = "Knock Knock :)"
 
 const whatsAppUrl = encodeURI(`https://wa.me/201117710932?text=${whatsAppMessage}`)
 
-const SocialContainer = () => (
-  <Container>
-    <SocialLink href="https://github.com/omarking05" target="_blank">
-      <Icon src={github} alt="Github" />
-    </SocialLink>
-    <SocialLink href="https://twitter.com/OmarAhm3" target="_blank">
-      <Icon src={twitter} alt="Twitter" />
-    </SocialLink>
-    <SocialLink href="https://dev.to/mrgeek" target="_blank">
-      <Icon src={devTo} alt="Dev.to" />
-    </SocialLink>
-    <SocialLink href="https://www.linkedin.com/in/omarahmed0/" target="_blank">
-      <Icon src={linkedIn} alt="Linked In" />
-    </SocialLink>
-    <SocialLink href="mailto:omar.ahmed.oaaem@gmail.com" target="_blank">
-      <Icon src={gmail} alt="Gmail" />
-    </SocialLink>
-    <SocialLink href={whatsAppUrl} target="_blank">
-      <Icon src={whatsApp} alt="WhatsApp" />
-    </SocialLink>
-  </Container>
-)
+export default class SocialContainer extends React.Component {
 
-export default SocialContainer;
+  render() {
+    return (
+      <Container>
+        <SocialLink href="https://github.com/omarking05" target="_blank">
+          <Icon>
+            <Github />
+          </Icon>
+        </SocialLink>
+        <SocialLink href="https://twitter.com/OmarAhm3" target="_blank">
+          <Icon>
+            <Twitter />
+          </Icon>
+        </SocialLink>
+        <SocialLink href="https://dev.to/mrgeek" target="_blank">
+          <Icon>
+            <DevTo />
+          </Icon>
+        </SocialLink>
+        <SocialLink href="https://www.linkedin.com/in/omarahmed0/" target="_blank">
+          <Icon>
+            <LinkedIn />
+          </Icon>
+        </SocialLink>
+        <SocialLink href="mailto:omar.ahmed.oaaem@gmail.com" target="_blank">
+          <Icon>
+            <Gmail />
+          </Icon>
+        </SocialLink>
+        <SocialLink href={whatsAppUrl} target="_blank">
+          <Icon>
+            <WhatsApp />
+          </Icon>
+        </SocialLink>
+      </Container>
+    )
+  }
+}
