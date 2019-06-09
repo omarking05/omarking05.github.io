@@ -57,7 +57,7 @@ export default class SocialContainer extends React.Component {
   render() {
     return (
       <Container>
-        <SocialLink rel="noopener noreferrer" href={withPrefix('/files/omar_ahmed_resume.pdf')} download="omar_ahmed_resume.pdf" target="_blank">
+        <SocialLink rel="noopener noreferrer" href="https://drive.google.com/open?id=1EkDQ62twizK68fQJO9hyQngJ4QdLMu3X" target="_blank">
           <Icon>
             <CV />
           </Icon>
