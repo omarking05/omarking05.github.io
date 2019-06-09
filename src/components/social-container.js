@@ -8,7 +8,8 @@ import DevTo from '../static/svg/dev-dot-to.svg';
 import LinkedIn from '../static/svg/linkedin.svg';
 import Gmail from '../static/svg/gmail.svg';
 import WhatsApp from '../static/svg/whatsapp.svg';
-
+import CV from '../static/svg/cv.svg';
+import { withPrefix } from 'gatsby';
 
 
 const Container = styled.div`
@@ -56,6 +57,11 @@ export default class SocialContainer extends React.Component {
   render() {
     return (
       <Container>
+        <SocialLink rel="noopener noreferrer" href={withPrefix('/files/omar_ahmed_resume.pdf')} download="omar_ahmed_resume.pdf" target="_blank">
+          <Icon>
+            <CV />
+          </Icon>
+        </SocialLink>
         <SocialLink href="https://github.com/omarking05" target="_blank">
           <Icon>
             <Github />
