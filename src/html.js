@@ -29,7 +29,7 @@ export default function HTML(props) {
         <script src="https://www.botme.com/plugin/widget.js"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
-            var options = {"header_logo":"https://botme.s3.us-east-2.amazonaws.com/2a939d3d31c9367d42ffba2838ee52ae.jpeg","header_color":"#ffffff","bot_side_color":"#f2f2f5","user_side_color":"#5badf0","font_family":"#000000","header_font_color":"#000000","bot_font_color":"#000","user_font_color":"#FFF","chat_bubble_shape":"rounded_style","header_title":"Hey there 👋","header_tag_line":"Questions, feedback? Let me know!","close_button_color":"#000000","botId":1572,"channelId":"wb_5da29129e7757f5b7f76f353","welcome":"a170061d5adc3df28cf8b990b3ead9c5","target":document.querySelector("#botme-plugin"),"channelType":"plugin"}
+            var options = {"header_logo":"https://botme.s3.us-east-2.amazonaws.com/650eeab257207f59a19a3dee1a0d49bb.jpeg","header_color":"#ffffff","bot_side_color":"#f2f2f5","user_side_color":"#5badf0","font_family":"#000000","header_font_color":"#000000","bot_font_color":"#000","user_font_color":"#FFF","chat_bubble_shape":"rounded_style","header_title":"Hey there 👋","header_tag_line":"Questions, feedback? Let me know!","close_button_color":"#000000","botId":1572,"channelId":"wb_5da29129e7757f5b7f76f353","welcome":"a170061d5adc3df28cf8b990b3ead9c5","target":document.querySelector("#botme-plugin"),"channelType":"plugin"}
             var widget = JSWidget.initialize(options);
           `
         }}></script>
