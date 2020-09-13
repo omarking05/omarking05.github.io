@@ -1,16 +1,5 @@
-html {
-  font-size: 19px;
-}
-
 a {
   background-image: none;
-  color: #5badf0;
-  text-decoration: none;
-}
-
-a:hover {
-  color: darkblue;
-  text-decoration: none;
 }
 
 h1, h2 {
